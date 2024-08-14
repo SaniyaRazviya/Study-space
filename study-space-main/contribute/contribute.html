@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contribute-style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contribution</title>
+  </head>
+  <body>
+    <h1>Contribute to Our Study Space</h1>
+    <p>We appreciate your help in making our study space better! </p>
+    
+    <form class="cf" action="process_form.php" method="post">
+      <div class="half left cf">
+        <input
+          type="text"
+          id="input-name"
+          name="name"
+          placeholder="Name"
+          required
+          autocomplete="off"
+        />
+        <input
+          type="email"
+          id="input-email"
+          name="email"
+          placeholder="Email address"
+          required
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="input-subject"
+          name="subject"
+          placeholder="Link"
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="half right cf">
+        <textarea
+          name="message"
+          id="input-message"
+          placeholder="Message"
+          required
+          autocomplete="off"
+        ></textarea>
+      </div>
+      <input type="submit" value="Submit" id="input-submit" />
+    </form>
+  </body>
+</html>
